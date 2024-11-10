@@ -11,7 +11,6 @@ The following packages are used in the project:
 - `maplibre_gl: ^0.19.0:` For rendering Barikoi maps in the application.
 - `location: ^7.0.1:` For retrieving the current location of the user.
 - `dio: ^5.7.0:` For making HTTP requests to Barikoi APIs.
-- `flutter_map: ^7.0.2:` For mapping features with integration for Barikoi.
 - `geolocator: ^13.0.1:` For accessing the geolocation of the user.
 - `flutter_dotenv: ^5.2.1:` For managing environment variables, such as the API key, securely.
 - `permission_handler: ^11.3.1:` For handling location permissions.
