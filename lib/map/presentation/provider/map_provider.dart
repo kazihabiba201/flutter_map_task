@@ -193,7 +193,24 @@ class MapProvider with ChangeNotifier {
       print('Map controller is not initialized');
     }
   }
-
+  void _setlatlngBounds(MaplibreMapController? mController) {
+    // Animate camera to LatLngBounds with the southwest and northeast corners
+    mController?.animateCamera(
+      CameraUpdate.newLatLngBounds(
+          LatLngBounds(
+            southwest: const LatLng(23.878921, 90.345552),
+            northeast: const LatLng(23.736799, 90.451606),
+          ),
+          left: 10,
+          top: 5,
+          bottom: 25,
+          right: 10
+      ),
+    );
+  }
+  void onMapReady(MaplibreMapController controller) {
+    _setlatlngBounds(controller);
+  }
   // Retrieves route data from the API and displays it on the map.
 
   Future<void> getDirections() async {

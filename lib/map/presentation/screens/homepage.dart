@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 styleString: MapProvider.mapUrl,
                 onMapCreated: (controller) {
                   mapProvider.mController = controller;
-
+                   mapProvider.onMapReady(controller);
 
                 },
                 onMapClick: (point, latLng) {
