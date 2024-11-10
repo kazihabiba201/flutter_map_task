@@ -40,6 +40,7 @@ class MapProvider with ChangeNotifier {
 
 
 
+  // Initializes the map provider and checks location permissions.
   MapProvider() {
     directionsRepository = DirectionsRepositoryProvider(dio: dio);
     _checkLocationPermission();
