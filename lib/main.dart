@@ -1,11 +1,11 @@
 import 'package:bari_koi/map/presentation/provider/map_provider.dart';
+import 'package:bari_koi/map/presentation/screens/homepage.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 
 import 'map/data/repositories/direction_repositories.dart';
-import 'map/presentation/screens/homepage.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,8 @@ Future<void> main() async {
       ),
       ChangeNotifierProvider<DirectionsRepositoryProvider>(
         create: (context) => DirectionsRepositoryProvider(dio: dio),
-      ),  ],
+      ),
+      ],
 
      child: const MyApp(),
     // ),

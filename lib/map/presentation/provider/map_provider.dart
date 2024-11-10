@@ -35,10 +35,11 @@ class MapProvider with ChangeNotifier {
   String? routeLineId;
   bool isSettingOrigin = true;
   bool isCustomMarkerAdded = false;
-  bool isLoading = false; // for loading state
+  bool isLoading = true; // for loading state
   String errorMessage = '';
 
-  // Initializes the map provider and checks location permissions.
+
+
   MapProvider() {
     directionsRepository = DirectionsRepositoryProvider(dio: dio);
     _checkLocationPermission();
