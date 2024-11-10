@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
 
 
     return Scaffold(backgroundColor: Colors.white,
-      appBar: AppBar(backgroundColor: Colors.amber, title: const Text('Barikoi Map'),centerTitle: true,),
+      appBar: AppBar(backgroundColor: Colors.amber, title: const Text('BariKoi Map'),centerTitle: true,),
       body: Column(
         children: [
           Expanded(

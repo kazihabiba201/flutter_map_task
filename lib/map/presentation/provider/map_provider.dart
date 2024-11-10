@@ -113,14 +113,14 @@ class MapProvider with ChangeNotifier {
         throw Exception('Failed to load address');
       }
     } catch (e) {
-      // Handle error by setting an error message
+
       errorMessage = 'Failed to fetch address. Please try again later.';
       notifyListeners();
 
-      // Notify the UI via snackbar using the context
+
       _showErrorSnackbar(context);
     } finally {
-      isLoading = false; // Set loading to false when done
+      isLoading = false;
       notifyListeners();
     }
   }
