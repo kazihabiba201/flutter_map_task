@@ -20,7 +20,7 @@ The following packages are used in the project:
 ## Getting Started
 
 ### Prerequisites
-Before you begin, make sure you have Flutter installed on your system. If you need installation guidance, visit the official Flutter Website [click the image!] [![Flutter Website](https://meterpreter.org/wp-content/uploads/2018/09/flutter.png)](https://docs.flutter.dev/get-started/install).
+Before you begin, make sure you have Flutter installed on your system. If you need installation guidance, visit the official Flutter Website [click the link!] [![Flutter Website](https://meterpreter.org/wp-content/uploads/2018/09/flutter.png)](https://docs.flutter.dev/get-started/install).
 ## Installation 
 
 To launch the CraftyBay Application, follow these steps:
@@ -43,7 +43,7 @@ Install dependencies:
 
 ### Installable APK
 
-[![drive](https://img.shields.io/badge/Click_Here_to_download_APK-000?style=for-the-badge&logo=flutter&logoColor=white)](https://drive.google.com/file/d/1IHbSV-s5hN7SfKOJKdWwUceHRUFcxzfc/view?usp=sharing)
+[![drive](https://img.shields.io/badge/Click_Here_to_download_APK-000?style=for-the-badge&logo=flutter&logoColor=white)](https://drive.google.com/drive/folders/1W3EwyC72-u1AsyTVfCjgayaj1OXqxTJv?usp=sharing)
 
 ### Executing the Code
 
@@ -112,6 +112,8 @@ String apiKey = dotenv.env['API_KEY']!;
 ## Detailed Class Documentation
 ### MapProvider
 This class handles the map-related state, including retrieving the user’s location, reverse geocoding, and routing. It uses Dio for making API requests and ChangeNotifier for state management.
+
+`Issue:` When requesting directions for a long-distance route, the route may not appear on the map, even though short-distance routes display correctly. 
 
 ### Attributes
 - `CameraPosition initialPosition:` Initial camera position when the map is first loaded.
@@ -405,6 +407,8 @@ Dio dio = Dio();
 ```
 #### `API Calls:` Used for making GET requests to the Barikoi APIs for reverse geolocation and routing.
 
+
+
 ##
 
 ## Custom PNG Marker on Map
@@ -414,4 +418,5 @@ Dio dio = Dio();
 <img src="https://github.com/user-attachments/assets/091d69b9-e384-4c58-9532-3f39930c555b" height="500"/>
 <img src="https://github.com/user-attachments/assets/f632944c-23da-42f9-8d49-f86ff291eae5" height="500"/>
 <img src="https://github.com/user-attachments/assets/478dc4d3-bc2e-423c-9df6-d9598d369126" height="500"/>
+
 
